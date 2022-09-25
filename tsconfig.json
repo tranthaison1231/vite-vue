@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "#/graphql/*": ["src/graphql/*"],
+      "#/generated/*": ["src/generated/*"],
+      "#/shared/*": ["src/shared/*"],
+      "#/pages/*": ["src/pages/*"],
+      "#/configs/*": ["src/configs/*"],
+      "#/routers/*": ["src/routers/*"],
+      "#/assets/*": ["src/assets/*"],
+      "#/src/*": ["./src/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
