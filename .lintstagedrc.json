@@ -1,0 +1,2 @@
+{ "*.{ts,js,vue}": "eslint --fix", "*": "prettier -w -u" }
+  
