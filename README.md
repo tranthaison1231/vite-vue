@@ -2,6 +2,7 @@
 
 ## Feature List
 
+- [x] Composition API
 - [x] Vue3, Typescript, Vite
 - [x] Huslky, Prettier, Eslint
 - [x] Vue Router
