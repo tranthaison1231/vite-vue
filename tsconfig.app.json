@@ -12,7 +12,7 @@
       "#/shared/*": ["src/shared/*"],
       "#/pages/*": ["src/pages/*"],
       "#/configs/*": ["src/configs/*"],
-      "#/routers/*": ["src/routers/*"],
+      "#/router/*": ["src/router/*"],
       "#/assets/*": ["src/assets/*"],
       "#/src/*": ["./src/*"]
     }
