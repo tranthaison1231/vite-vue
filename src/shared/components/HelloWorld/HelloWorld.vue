@@ -1,7 +1,10 @@
 <script setup lang="ts">
-  defineProps<{
-    msg: string;
-  }>();
+import { useCounterStore } from "#/shared/stores/counter";
+
+const { count } = useCounterStore();
+defineProps<{
+  msg: string;
+}>();
 </script>
 
 <template>
@@ -9,6 +12,7 @@
     <h1 class="green">{{ msg }}</h1>
     <h3>
       You’ve successfully created a project with
+      <p>{{ count }}</p>
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
       What's next?

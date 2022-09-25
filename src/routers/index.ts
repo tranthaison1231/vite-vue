@@ -1,14 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import HomePage from '#/pages/HomePage.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import HomePage from "#/pages/HomePage.vue";
 
 const routes = [
   {
-    path: '/',
+    path: "/",
     component: HomePage,
   },
   {
-    path: '/about',
-    component: () => import('../pages/AboutPage.vue'),
+    path: "/about",
+    component: () => import("../pages/AboutPage.vue"),
   },
 ];
 

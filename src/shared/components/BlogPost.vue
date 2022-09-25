@@ -1,8 +1,8 @@
 <script setup lang="ts">
-  import { defineProps } from 'vue';
-  defineProps<{
-    title?: string;
-  }>();
+import { defineProps } from "vue";
+defineProps<{
+  title?: string;
+}>();
 </script>
 <template>
   <div class="blog-post">
