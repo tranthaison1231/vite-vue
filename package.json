@@ -16,6 +16,11 @@
     "prepare": "husky install",
     "format": "prettier .  --write"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "dependencies": {
     "@quasar/extras": "^1.15.3",
     "quasar": "^2.8.4",
@@ -27,6 +32,8 @@
     "src/vite-env.d.ts"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@quasar/vite-plugin": "^1.2.3",
     "@types/node": "^18.7.20",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
