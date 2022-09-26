@@ -10,7 +10,7 @@
 - [ ] Guard Router
 - [x] Apollo client with Graphql
 - [x] State management with Pinia
-- [ ] I18n
+- [x] I18n
 - [ ] Handle config token
 - [x] Testing with vitest
 - [x] Router with Vue Router
