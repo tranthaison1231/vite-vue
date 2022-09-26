@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useGetCharactersQuery } from "#/generated/schemas";
+import useTypeSafeTranslation from "#/shared/hooks/useTypeSafeTranslation";
 
+const { t } = useTypeSafeTranslation();
 const { result, loading } = useGetCharactersQuery({
   page: 1,
 });
@@ -20,7 +22,7 @@ const characters = result.value?.characters?.results ?? [];
   <div class="q-pa-md">
     <q-table
       :loading="loading"
-      title="Characters"
+      :title="t('hello')"
       :rows="characters"
       :columns="columns"
       row-key="id"

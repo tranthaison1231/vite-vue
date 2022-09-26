@@ -9,6 +9,7 @@ import { Quasar, Notify } from "quasar";
 import "quasar/src/css/index.sass";
 import { client } from "./graphql/client";
 import { DefaultApolloClient } from "@vue/apollo-composable";
+import i18n from "./shared/i18n";
 
 createApp({
   setup() {
@@ -18,6 +19,7 @@ createApp({
   render: () => h(App),
 })
   .use(router)
+  .use(i18n)
   .use(createPinia())
   .use(Quasar, {
     plugins: {
