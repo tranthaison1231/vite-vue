@@ -8,8 +8,8 @@
 - [x] Vue Router
 - [x] Quasar, Tailwind
 - [ ] Guard Router
-- [ ] Apollo client with Graphql
+- [x] Apollo client with Graphql
 - [x] State management with Pinia
 - [ ] I18n
-- [ ] Testing with vitest
+- [x] Testing with vitest
 - [x] Router with Vue Router
