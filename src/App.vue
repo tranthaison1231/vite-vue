@@ -4,6 +4,8 @@
     <nav class="flex-1 bg-slate-500">
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/login">Login</RouterLink>
+      <RouterLink to="/dashboard">Dashboard</RouterLink>
     </nav>
     <router-view />
   </div>
