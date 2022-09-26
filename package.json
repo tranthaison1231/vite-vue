@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview --port 4173",
-    "test:unit": "vitest --environment jsdom",
+    "test:unit": "vitest run --environment jsdom",
     "test:e2e": "start-server-and-test preview http://localhost:4173/ 'cypress open --e2e'",
     "test:e2e:ci": "start-server-and-test preview http://localhost:4173/ 'cypress run --e2e'",
     "build-only": "vite build",
@@ -17,7 +17,8 @@
     "check-types:watch": "tsc --noEmit --watch",
     "lint-pass": "echo '\\033[4;32m♡ ' Format complete ♡' \\033[0m'",
     "prepare": "husky install",
-    "format": "prettier .  --write"
+    "format": "prettier .  --write",
+    "gen-graphql-types": "graphql-codegen -r dotenv/config --config codegen.yml"
   },
   "commitlint": {
     "extends": [
@@ -25,19 +26,31 @@
     ]
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@graphql-codegen/cli": "^2.12.1",
     "@quasar/extras": "^1.15.3",
+    "@vue/apollo-composable": "4.0.0-alpha.19",
+    "@vue/composition-api": "^1.7.1",
+    "add": "^2.0.6",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
     "pinia": "^2.0.22",
     "quasar": "^2.8.4",
     "vue": "^3.2.39",
+    "vue-apollo": "^3.1.0",
     "vue-router": "^4.1.5"
   },
   "eslintIgnore": [
     "postcss.config.js",
-    "tailwind.config.js"
+    "tailwind.config.js",
+    "./src/generated/schemas.ts"
   ],
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@graphql-codegen/typescript": "^2.7.3",
+    "@graphql-codegen/typescript-operations": "^2.5.3",
+    "@graphql-codegen/typescript-vue-apollo": "^3.3.3",
     "@quasar/vite-plugin": "^1.2.3",
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/jsdom": "^20.0.0",

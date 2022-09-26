@@ -18,6 +18,10 @@ const routes = [
     path: "/dashboard",
     component: () => import("../pages/DashboardPage.vue"),
   },
+  {
+    path: "/users",
+    component: () => import("../pages/UsersPage.vue"),
+  },
 ];
 
 const router = createRouter({

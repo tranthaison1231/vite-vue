@@ -6,6 +6,7 @@
       <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/login">Login</RouterLink>
       <RouterLink to="/dashboard">Dashboard</RouterLink>
+      <RouterLink to="/users">Users</RouterLink>
     </nav>
     <router-view />
   </div>

@@ -1,0 +1,20 @@
+overwrite: true
+schema:
+  - ${VITE_BASE_URL}
+
+config:
+  namingConvention:
+    transformUnderscore: true
+
+hooks:
+  afterAllFileWrite:
+    - eslint --fix
+    - prettier --write
+
+generates:
+  src/generated/schemas.ts:
+    documents: "src/graphql/**/**.gql"
+    plugins:
+      - typescript
+      - typescript-vue-apollo
+      - typescript-operations
