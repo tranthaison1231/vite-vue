@@ -7,11 +7,11 @@
 - [x] Huslky, Prettier, Eslint
 - [x] Vue Router
 - [x] Quasar, Tailwind
-- [ ] Guard Router
+- [x] Guard Router
 - [x] Apollo client with Graphql
 - [x] State management with Pinia
 - [x] I18n
-- [ ] Handle config token
+- [x] Handle config token
 - [x] Testing with vitest
 - [x] Router with Vue Router
-- [ ] Private/Admin Layout
+- [x] Private/Admin Layout

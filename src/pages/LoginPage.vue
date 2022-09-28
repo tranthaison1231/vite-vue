@@ -1,10 +1,13 @@
 <script lang="ts" setup>
+import { setToken } from "#/shared/utils/token";
 import { useQuasar } from "quasar";
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const $q = useQuasar();
-const name = ref(null);
-const age = ref(null);
+const name = ref<string | null>(null);
+const age = ref<string | null>(null);
 const accept = ref(false);
 
 function onSubmit() {
@@ -16,12 +19,19 @@ function onSubmit() {
       message: "You need to accept the license and terms first",
     });
   } else {
-    $q.notify({
-      color: "green-4",
-      textColor: "white",
-      icon: "cloud_done",
-      message: "Submitted",
+    console.log({
+      name: name.value,
+      accept: accept.value,
+      age: age.value,
     });
+    if (
+      name.value === "sontran" &&
+      accept.value === true &&
+      age.value === "23"
+    ) {
+      setToken("123456");
+      router.push({ path: "/" });
+    }
   }
 }
 function onReset() {

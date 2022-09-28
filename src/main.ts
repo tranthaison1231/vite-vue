@@ -1,9 +1,8 @@
 import { createPinia } from "pinia";
 import { createApp, provide, h } from "vue";
-
 import App from "./App.vue";
-import router from "./router";
-
+import router from "#/router/index";
+import "#/router/permission";
 import "@quasar/extras/material-icons/material-icons.css";
 import { Quasar, Notify } from "quasar";
 import "quasar/src/css/index.sass";
