@@ -14,3 +14,4 @@
 - [ ] Handle config token
 - [x] Testing with vitest
 - [x] Router with Vue Router
+- [ ] Private/Admin Layout
