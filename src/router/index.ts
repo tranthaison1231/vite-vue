@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "#/pages/HomePage.vue";
 
 const routes = [
   {
     path: "/",
-    component: HomePage,
+    component: () => import("../shared/layouts/PrivateLayout.vue"),
+    children: [{ path: "", component: () => import("../pages/HomePage.vue") }],
   },
   {
     path: "/about",
@@ -21,6 +21,10 @@ const routes = [
   {
     path: "/users",
     component: () => import("../pages/UsersPage.vue"),
+  },
+  {
+    path: "/:catchAll(.*)*",
+    component: () => import("../pages/404Page.vue"),
   },
 ];
 
