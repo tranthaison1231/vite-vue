@@ -3,3 +3,7 @@
     <p>Home</p>
   </div>
 </template>
+<route lang="yaml">
+meta:
+  layout: private
+</route>

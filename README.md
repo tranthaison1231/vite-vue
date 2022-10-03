@@ -15,3 +15,5 @@
 - [x] Testing with vitest
 - [x] Router with Vue Router
 - [x] Private/Admin Layout
+- [x] Vite Plugin Pages
+- [x] Vite Plugin Layouts
