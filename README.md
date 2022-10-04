@@ -17,3 +17,4 @@
 - [x] Private/Admin Layout
 - [x] Vite Plugin Pages
 - [x] Vite Plugin Layouts
+- [ ] Sentry
