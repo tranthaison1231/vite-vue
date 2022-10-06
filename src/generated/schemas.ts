@@ -1,3 +1,4 @@
+// @ts-nocheck
 import gql from "graphql-tag";
 import * as VueApolloComposable from "@vue/apollo-composable";
 import * as VueCompositionApi from "@vue/composition-api";

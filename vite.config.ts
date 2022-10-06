@@ -4,7 +4,7 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 import pages from "vite-plugin-pages";
 import layouts from "vite-plugin-vue-layouts";
-
+import components from "unplugin-vue-components/vite";
 import { quasar, transformAssetUrls } from "@quasar/vite-plugin";
 
 // https://vitejs.dev/config/
@@ -19,6 +19,9 @@ export default defineConfig({
       template: { transformAssetUrls },
     }),
     vueJsx(),
+    components({
+      dirs: ["src/shared/components"],
+    }),
     pages({
       routeStyle: "nuxt",
       dirs: "src/pages",

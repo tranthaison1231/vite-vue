@@ -15,6 +15,9 @@ generates:
   src/generated/schemas.ts:
     documents: "src/graphql/**/**.gql"
     plugins:
+      - add:
+          content:
+            - "// @ts-nocheck"
       - typescript
       - typescript-vue-apollo
       - typescript-operations
