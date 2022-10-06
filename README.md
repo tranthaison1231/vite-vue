@@ -18,3 +18,4 @@
 - [x] Vite Plugin Pages
 - [x] Vite Plugin Layouts
 - [ ] Sentry
+- [x] Auto import component

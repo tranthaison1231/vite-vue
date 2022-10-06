@@ -12,8 +12,6 @@
     "check-types": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "lint": "eslint \"src/**/*.{vue,ts,tsx}\" --fix",
     "lint-staged": "lint-staged",
-    "lint:markup": "vue-tsc --noEmit",
-    "check-types:watch": "tsc --noEmit --watch",
     "lint-pass": "echo '\\033[4;32m♡ ' Format complete ♡' \\033[0m'",
     "prepare": "husky install",
     "format": "prettier .  --write",
